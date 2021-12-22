@@ -24,6 +24,13 @@ module.exports = {
             },
         ],
     },
+    devServer: {
+        static: {
+            directory: __dirname,
+        },
+        compress: true,
+        port: 9000,
+    },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
     },
